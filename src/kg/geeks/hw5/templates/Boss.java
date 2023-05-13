@@ -1,4 +1,4 @@
-package kg.geeks.hw5;
+package kg.geeks.hw5.templates;
 
 public class Boss {
     private int health;
@@ -7,7 +7,7 @@ public class Boss {
 
     public int getHealth(){return this.health;}
     public int getDamage(){return this.damage;}
-    public String getUltimate(){return this.defenceType;}
+    public String getDefenceType(){return this.defenceType;}
     public void setHealth(int newHealth){
         if (newHealth > 0) {
             this.health = newHealth;
@@ -17,12 +17,12 @@ public class Boss {
     }
     public void setDamage(int newDamage){
         if (newDamage > 0) {
-            this.health = newDamage;
+            this.damage = newDamage;
         } else {
             System.out.println("Can't be zero or lower");
         }
     }
-    public void setDefenceTypee(String newDefenceType){
+    public void setDefenceType(String newDefenceType){
         if (newDefenceType != null) {
             this.defenceType = newDefenceType;
         } else {
